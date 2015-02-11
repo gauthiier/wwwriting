@@ -39,15 +39,15 @@ $include-before$
 $endfor$
 <content>
 $if(title)$
-$if(cover)$
-<figure>
-  <img src="$cover$"/>
-</figure>
-$endif$
 <header>
 <h1 class="title">$title$</h1>
 $if(subtitle)$
 <h1 class="subtitle">$subtitle$</h1>
+$endif$
+$if(cover)$
+<figure>
+  <img src="$cover$"/>
+</figure>
 $endif$
 $for(author)$
 <h2 class="author">$author$</h2>
