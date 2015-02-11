@@ -27,7 +27,6 @@ The idea in compiling this site-lesson is two fold:
 
 # Scheme
 
-
 The current site is segmented in six lessons covering the (very) basics of writing academic texts on a computer.[^3] The overall composition of these lessons is by no mean derived from obscure "Principles" or (even worst) "Best-practices" but rather stand as loosely coupled set of lessons that can be traversed all together (or not) in a short period of time. The site is neither a manual nor a manifesto and should be seen as a starting point into further developing (creative) technics and methods in text writing. 
 
 * [Lesson 1: Text Encoding](/)
