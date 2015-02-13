@@ -4,12 +4,12 @@ bibliography: wwwrite.bib
 cover: img/DSP6.png
 ---
 
-# Intent
+## Intent
 
 
 This site is intended to introduce humanities research writers how to write text in a modern fashion using their computers. The aim of the lessons listed below  are points of departure for the practice of writing text using simple, basic yet advance systems and technologies. Part of this endeavour is first and foremost to empower writers to use these systems in presenting simple didactic material working towards bootstrapping their understanding of writing technologies and help them develop a new type of literacy (albeit an electronic one). Another goals of this site is to present the historical trajectories of modern writing systems by emphasising on their phylogenesis. Computerised writing systems and related methods (as we will see) have a long history following that of writing itself; the double-valance between the practice of writing and the mode of inscription (technologies) is an important (research) topic in the humanities [@pontin_how_2012; @kirschenbaum_bookwriting_2013; @kirschenbaum_mechanisms:_2012; @kittler_discourse_1990].
 
-# Philosophy 
+## Philosophy 
 
 The idea in compiling this site-lesson is two fold: 
 
@@ -24,7 +24,7 @@ The idea in compiling this site-lesson is two fold:
 
 	As you may already know, writing software is primarily a textual-based practice. Writing code is all about text, keyboards, text editors, line count, syntax and the likes. Hence an important amount of systems and technologies have been devised for the composition of software (as text). From syntax highlighting to version control, these systems have a long history and can possibly provide academic writers with powerful literary tools that can enable them to bolster their prose.[^2] In exposing (and historicising) these systems our objective is for the reader to relate to modern software writing systems not as merely a tool but as system with a culture. In no way we expect readers to become "programmers", far from this, we would rather present them the basics of writing text using (modern) computer systems while hoping that they'll develop a critical stance on these systems' genesis, conditions, limitations and capabilites.  
 
-# Scheme
+## Scheme
 
 The current site is segmented in six lessons covering the (very) basics of writing academic texts on a computer.[^3] The overall composition of these lessons is by no mean derived from obscure "Principles" or (even worst) "Best-practices" but rather stand as loosely coupled set of lessons that can be traversed all together (or not) in a short period of time. The site is neither a manual nor a manifesto and should be seen as a starting point into further developing (creative) technics and methods in text writing. 
 
@@ -54,7 +54,7 @@ The current site is segmented in six lessons covering the (very) basics of writi
 
 As a final note worth mentioning (before delving further): all the lessons of this site, including this page, have been (are) written using the aforementioned encodings and systems. Hence, for the curious, the reader can lookup the files, modify and compile them to bootstrap their writing project. Whatever you see on this site is made available for you to read, modify, etc.
 
-# References
+## References
 
 [^1]: Literally fall short of basic features– i.e. can’t format a bibliography for example– or disable these features by design as [Antifeatures](https://www.fsf.org/bulletin/2007/fall/antifeatures/).
 
