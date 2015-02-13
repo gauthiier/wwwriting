@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<content>
+<h2 id="text-encoding">Text Encoding</h2>
+<p>We believe in approaching text writing by first understanding the core inscription mechanism upheld by modern computing machine. In this lesson we will hence look at how text and characters are inscribed and represented internally within computers. More specifically we will look at standards of text encoding (and decoding) and see how text editors can decode such encoding.</p>
+<h3 id="goals">Goals</h3>
+<p>The aim of this lesson is to present the various ways that computers represent text internally, that is, characters as digits. The lesson is tailored in giving the reader the basic knowledge of standards that establish the quanta of text (data). Our hope in doing so is to give a feel of a kind of materiality of text and present the ways in which various levels of abstraction are applied to it.</p>
+<p>In a nutshell, the goals of this lesson are:</p>
+<ol style="list-style-type: decimal">
+<li>Understand the various ways in which characters are represented and encoded as digits.</li>
+<li>Derive a basic understanding of how proprietary text formats are encoded.</li>
+<li>Develop a critical stance on why proprietary text formats might be problematic.</li>
+<li>Develop a critical stance on why standardized open text formats are important and ubiquitous.</li>
+<li>Learn how to use a plain text editor to write, view and inspect different open standards encodings of a given text file.</li>
+</ol>
+<h3 id="history">History</h3>
+<p>As everyone heard of the byte format? If you didn't it's about time you do as you employ this legacy format daily when using your computer. A byte is the most basic quanta of computing and is composed of 8 bits, where a bit stands for what is commonly represented by a 0 or 1. Hence a byte is a 8-bits &quot;packet&quot; which can represent decimal numbers ranging from 0 to 255 (or -128 to 127). In this lesson we will use the <a href="https://en.wikipedia.org/wiki/Hexadecimal">Hexadecimal</a> notation to represent bytes. A byte is an historical format and encapsulate the most basic data structure in computing machinery, a standard introduced by IBM for its flagship <a href="http://www.computermuseum.li/Testpage/IBM-360-1964.htm">IBM/360</a> mainframe machine in 1964.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<p>Roughly at the same time (1963) another (updated) standard was devised for the encoding of characters: ASCII [ref]. ASCII conceived a 7-bit format for characters that was factorised into an 8-bit format on the IBM/360. With a 7-bit format, ASCII had the possibility to encode 127 characters. However, the IBM/360 opted to use the legacy <a href="https://en.wikipedia.org/wiki/EBCDIC">EBCDIC</a> 8-bit format as default character set (dubbed &quot;charset&quot;) on all software developed for the IBM/360<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>. Hence the mass adoption of ASCII as main default charset in computing systems came years after mainly with the advent of PCs.</p>
+<p>Is ASCII still in use today? Yes and no. ASCII has some important limitations as it was designed for Latin-based languages and does not support non-Latin characters (hence a 7-bit format for an Latin alphabet). With the wide spread of PCs around the world and the rise of the Internet as main communication infrastructure, the need for a single character format (albeit a Universal Format) accounting for both Latin and non-Latin characters (Cyrillic, Hebrew, Arabic, Turkish to name a few) was imminent at the beginning for the 90s.</p>
+<p>Hence the establishment of the Unicode standard which aim is to devise and maintain a Universal Character Set (UCS) composed of special codes points for each character (a kind of &quot;meta&quot;-charset if you want, composed of specific unicode codes)<a href="#fn3" class="footnoteRef" id="fnref3"><sup>3</sup></a>. Unicode does not specify specific encodings for its code points. Rather, encodings are part of specific implementations of the UCS such as UTF (UCS Transformation Format). The most notable UTF being UTF-8.<a href="#fn4" class="footnoteRef" id="fnref4"><sup>4</sup></a> The special feature of UTF-8 is that it is directly backward compatible with ASCII (an 8-bit ASCII character as the same encoding as its UTF-8 version) and has the property of being variable in length, meaning that Latin characters are encoded with a single byte while other non-Latin characters may be encoded with up to 4 bytes.<a href="#fn5" class="footnoteRef" id="fnref5"><sup>5</sup></a> Nowadays, UTF-8 is one of the most (if not <em>the</em> most) mass adopted / ubiquitous character encoding format.<a href="#fn6" class="footnoteRef" id="fnref6"><sup>6</sup></a></p>
+<h3 id="how">How</h3>
+<p>Let's start with a very simple example to illustrate how text is encoded.</p>
+<p>The following sentence</p>
+<pre><code>this is a sentence encoded in UTF-8.</code></pre>
+<p>is equivalent to UTF-8</p>
+<pre><code>7468 6973 2069 7320 6120 7365 6e74 656e 6365 2065 6e63 6f64 6564 2069 6e20 5554 462d 382e</code></pre>
+<p>and Unicode</p>
+<pre><code>U+0074 U+0068 U+0069 U+0073 U+0020 U+0069 U+0073 U+0020 U+0061 U+0020 U+0073 U+0065 U+006e U+0074 U+0065 U+006e U+0063 U+0065 U+0020 U+0065 U+006e U+0063 U+006f U+0064 U+0065 U+0064 U+0020 U+0069 U+006e U+0020 U+0055 U+0054 U+0046 U+002d U+0038 U+002e</code></pre>
+<p>Now the same sentence in Vietnamese</p>
+<pre><code>đây là một câu UTF-8.</code></pre>
+<p>is equivalent to UTF-8</p>
+<pre><code>c491 c3a2 7920 6cc3 a020 6de1 bb99 7420 63c3 a275 2055 5446 2d38 2e</code></pre>
+<p>and Unicode</p>
+<pre><code>U+0111 U+00e2 U+0079 U+0020 U+006c U+00e0 U+0020 U+006d U+1ed9 U+0074 U+0020 U+0063 U+00e2 U+0075 U+0020 U+0055 U+0054 U+0046 U+002d U+0038 U+002e</code></pre>
+<p>A few observations from the examples above are worth noting:</p>
+<ol style="list-style-type: decimal">
+<li><p>For the English sentence, the UTF-8 encoding and Unicode representation are basically the same. This is because what we are looking at is basically straight ASCII! Unicode's UCS was designed to integrate ASCII into it's core coding scheme and hence used the same codes for its Latin-based subset. UTF-8 implements this (obviously) into its encoding scheme.</p></li>
+<li><p>UTF-8 encoding of the English sentence is far more compact then the Unicode UCS. For a single character, UTF-8 utilises two bytes rather than four from the UCS.</p></li>
+<li><p>For the Vietnamese sentence, things get a little more interesting. Here the UTF-8 encoding and Unicode representation are <em>not</em> the same. As explained in the last section, UTF-8 encoding format and Unicode code points are not meant to be equivalent, one is a standard (Unicode) while the other is the implementation of this standard (UTF-8).</p></li>
+<li><p>UTF-8 encoding of the Vietnamese sentence is <em>not</em> necessarily more compact then Unicode's UCS. In fact we see UTF-8 utilising four bytes to encode some characters (remember that UTF-8 is of variable-length). For example the character 'â' is 'U+00e2' in UCS (two significant bytes) while 'c3a2' in UTF-8 (four significant bytes). A great chart to look at the various codes and encoding can be found here: <a href="http://utf8-chartable.de">http://utf8-chartable.de</a></p></li>
+</ol>
+<p>At this point, we should stress the fact that what is inscribed in computing memory is the <em>encoding</em> of text and not its Unicode representation. In other words, UTF-8 is the scheme from which computers inscribe text to physical memory using their read/write mechanisms. What is inscribed physically are single bits following the UTF-8 encodings scheme that gives meaning to 8-bit &quot;packets&quot; as characters. In the example above we have employed the hexadecimal notation to represent such &quot;packets&quot;/data. This is, of course, an kind of abstraction from the physical layer where text is actually inscribed, a convenient way for us humans to decipher and group bits. It nonetheless gives us a feel for the type of &quot;materiality&quot; of text inscribed on and manipulated by computing machine. For a more in depth analysis of physical inscription mechanisms, we refer the forensics work of Kirschenbaum <span class="citation">(Kirschenbaum 2012)</span> on the subject.</p>
+<h4 id="plain-text-editors">(Plain) Text Editors</h4>
+<p>But how do I go about and start looking up the encoding of a particular text? Well it is pretty simple: don't use word processing software; use a <a href="https://en.wikipedia.org/wiki/Text_editor">plain text editor</a>. For the examples above we've used <a href="http://www.sublimetext.com">Sublime Text</a><a href="#fn7" class="footnoteRef" id="fnref7"><sup>7</sup></a> to manipulate and reveal encodings of our sentences. The idea with plain text editors is that they give it all, they are usually very basic in appearance yet usually have striking features that are central to the practice of computer programming. There exist a panoply of good and powerful text editors<a href="#fn8" class="footnoteRef" id="fnref8"><sup>8</sup></a> and some are even legacy editors such as <a href="https://www.gnu.org/software/emacs/">Emacs</a> and <a href="http://www.vim.org">Vi(m)</a>. In this lesson (and the remaining ones) we will use Sublime to illustrate techniques and concept, yet any other editors would suffice without a doubt.</p>
+<p>Now equipped with an editor, let's look up what a word processing file looks like:</p>
+<div class="figure">
+<img src="img/garbage.png" />
+</div>
+<p>To select the encoding of a file using Sublime: <strong>Menu</strong> -&gt; <strong>File</strong> -&gt; <strong>Reopen with Encoding</strong></p>
+<p>The above file is an Apple Pages file that we have opened using Sublime with UTF-8 decoding.</p>
+<p>As you can see there is many characters that do not read properly, that is, not human readable. In fact, we can see that UTF-8 decodes the bytes in the file and maps their content to some Unicode &quot;control&quot; character. These &quot;control&quot; characters are part of the UCS and are characters representing computer commands if you like, rather than elements of an alphabet. For example a &quot;new line&quot; character representing a new line in a text (when the &quot;return&quot; key is pressed on a keyboard) has a &quot;LF&quot; (Line Feed) symbol with UCS U+000A value. There exists many of such characters, notably &quot;EOF&quot; - End-Of-File, &quot;ESC&quot; - Escape, and &quot;NULL&quot; -- 0x0000 to name a few.</p>
+<p>However, in the case of the Apple Pages file, these &quot;control&quot; characters are meaningless as they do not obviously follow the Unicode standard. Instead Pages inserts into it's text specific commands that only have meaning for the Apple Pages program. In short, these are bytes that have meaning only to Apple and their specific regime of encoding files. Such commands may refer to specific ways to display certain types of characters, or perhaps signify the beginning of a paragraph, or specify a font to render text, or even be the data of an image (who knows?). Pages is not a standard format but a proprietary one, therefore it is not possible to instruct my text editor on how to decode the bytes found in the Pages document. In a sense, in having all data part of a single file (information about the design, layout, font, etc.) it makes the files overly complex compared to plain text format. As a result, word processing files tend to be larger in size than plain UTF-8 encoded ones. The text from the file above has 1 389 characters. Its Apples Pages file is composed of 179 759 bytes while its plain UTF-8 version only 1 391 bytes (two extra bytes for the &quot;EOF&quot; control character).</p>
+<p>In turn the obvious unreadability of proprietary word processing file formats (such as Apple Pages, MS Word) coupled with their tendency to bloat file, makes them problematic in terms of politics of encoding, usability and efficiency. Hence, standards like UTF-8 and the use of plain text editors are viable alternative for writing academic text and sustained by a practice that is unbounded by obfuscating interests and techniques. What is human-readable is human-understandable.</p>
+<h3 id="extra">Extra</h3>
+<p>As an exercise for this lesson, please feel free to experiment with <a href="http://www.sublimetext.com">Sublime Text</a> (especially its encoding features): <strong>Menu</strong> -&gt; <strong>File</strong> -&gt; <strong>Reopen with Encoding</strong></p>
+<p><a href="http://www.sublimetext.com/docs/2/">Sublime Text 2 Official Documentation</a></p>
+<p><a href="http://sublime-text-unofficial-documentation.readthedocs.org/en/sublime-text-2/">Sublime Text 2 Non-Official Documentation</a></p>
+<p>Note: If you are a plain text editing novice, please make sure you understand just-enough basics to start. Some of the tutorials only are tailored for advanced programmers and their jargon may be confusing at times.</p>
+<div class="references">
+<h3>References</h3>
+<p>Amdahl, G.M., G.A. Blaauw, and F.P. Brooks. 1964. “Architecture of the IBM System/360.” <em>IBM Journal of Research and Development</em> 8 (2): 87–101. doi:<a href="http://dx.doi.org/10.1147/rd.82.0087">10.1147/rd.82.0087</a>.</p>
+<p>Kirschenbaum, Matthew G. 2012. <em>Mechanisms: new Media and the Forensic Imagination</em>. Cambridge, Mass.; London: MIT Press.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>The IBM/360 is one of the most sold computer of its time. For a discussion about the 8-bit byte format see <em>Data Format</em> section in <span class="citation">(Amdahl, Blaauw, and Brooks 1964)</span>.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>See section <em>ASCII vs BCD codes</em> in <span class="citation">(Amdahl, Blaauw, and Brooks 1964)</span> and for more information about the history of the ASCII format see the writings of <a href="http://www.bobbemer.com/BYTE.HTM">Bob Bemer</a>.<a href="#fnref2">↩</a></p></li>
+<li id="fn3"><p>Unicode codes are represented with a 'U' prefix before their numerical codes. For a table of all the codes, refer to <a href="http://unicode-table.com/">http://unicode-table.com/</a><a href="#fnref3">↩</a></p></li>
+<li id="fn4"><p>See also UTF-16, UTF-32 and the Unicode <a href="http://www.unicode.org/faq/utf_bom.html">FAQ</a> for disambiguation.<a href="#fnref4">↩</a></p></li>
+<li id="fn5"><p>UTF-8 was conceived by <a href="https://en.wikipedia.org/wiki/Ken_Thompson">Ken Thompson</a> and <a href="https://en.wikipedia.org/wiki/Rob_Pike">Rob Pike</a> on a placemat in a <a href="http://www.cl.cam.ac.uk/~mgk25/ucs/utf-8-history.txt">New Jersey diner in 1992</a>.<a href="#fnref5">↩</a></p></li>
+<li id="fn6"><p>Especially on the Internet -- see character encodings historical trend <a href="http://w3techs.com/technologies/history_overview/character_encoding/ms/y">chart</a>.<a href="#fnref6">↩</a></p></li>
+<li id="fn7"><p>Although moving to <a href="https://atom.io">Atom</a> eminently.<a href="#fnref7">↩</a></p></li>
+<li id="fn8"><p>For a list of such editors please refer to <a href="https://en.wikipedia.org/wiki/Comparison_of_text_editors">this article</a>.<a href="#fnref8">↩</a></p></li>
+</ol>
+</div>
+</content>
+</body>
+</html>

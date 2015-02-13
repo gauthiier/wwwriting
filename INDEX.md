@@ -32,7 +32,7 @@ The current site is segmented in six lessons covering the (very) basics of writi
 
 	Covers fundamentals of representation of text looking up how text is encoded/decoded as data.
 
-* [Lesson 2: "Terminal" or Cmd Prompt](/)
+* [Lesson 2: CLI or the Command Line Interface](/)
 
 	Presents how one can manipulate files and issue computing commands using what is known as a terminal.
 

@@ -1,4 +1,4 @@
-## Terminal
+## CLI or the Command Line Interface
 
 ### Goals
 
