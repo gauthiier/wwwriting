@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<content>
+<h2 id="markup-markdown">Markup / Markdown</h2>
+<p>Markup languages are one of the most pervasive and common types of language on the Internet. In fact HTML is a type of markup language responsible to instruct our web browsers on how to layout text, images and the likes on our screens. Behind all web pages, there is a markup text file that is sent from a server to our browsers when we type in a URL. The beauty of markup languages is that they are both <a href="https://en.wikipedia.org/wiki/Human-readable_medium">human-readable</a> and <a href="https://en.wikipedia.org/wiki/Machine-readable_data">machine-readable</a> and written in plain text format. Reading a marked up text one can notice the special &quot;meta-codes&quot; and related syntax that direct machines in interpreting the same text. The idea is thus to have some standards and conventions describing these meta-codes and expected machine interpretation.</p>
+<h3 id="goals">Goals</h3>
+<p>In this lesson we will introduce the Markdown language for writing (academic) texts. Markdown is a type of markup language that features very intuitive set of meta-codes and a simple syntax that can seamlessly integrate with normal text without transforming them much.</p>
+<p>The aims of this lesson are:</p>
+<ol style="list-style-type: decimal">
+<li>Understand the basic syntax of Markdown and be able to write markdown valid text.<br /></li>
+<li>Acquire just-enough Markdown vocabulary to be used in future work.</li>
+</ol>
+<h3 id="how">How</h3>
+<p>Before we delve into the Markdown language, it is important to understand why we use it. A file written in the language has the benefit of being interpreted and hence converted into various types of output formats. Depending on the type markdown interpreter / converter, documents formats such as HTML, PDF, EPUB, DOC, etc. can be produced out of a single markdown file source. This is the main reason the language is widely used; to easily generate web pages, pdf publications and epub without having to directly code their actual inner formats. In using markdown as a source language, all of the above formats are made available for you to publish in. How to convert markdown file is discussed in the <a href="Lesson4.html">next lesson</a>.</p>
+<p>The premise of this lesson is going to be very simple. Since this lesson is written in Markdown, snippets the language/syntax will be discussed and exemplified in-line in HTML format.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a></p>
+<h4 id="italic-and-bold"><em>italic</em> and <strong>bold</strong></h4>
+<p>Let's start with the simplest: <em>italic</em> and <strong>bold</strong></p>
+<pre><code>Let&#39;s start with the simplest: _italic_ and __bold__</code></pre>
+<p>Notice the single (<em>italic</em>) and double (<strong>bold</strong>) underscores '_'?</p>
+<p>Let's continue with the same: <em>italic</em> and <strong>bold</strong></p>
+<pre><code>Let&#39;s continue with the same: *italic* and **bold**</code></pre>
+<p>Notice the single (<em>italic</em>) and double (<strong>bold</strong>) stars '*'?</p>
+<h4 id="headers-toc-sections">Headers &amp; TOC Sections</h4>
+<p>Now since we are writing text, let's now look at how Markdown detonates headers.</p>
+<p>Using the hash mark '#' one can generate various types of headers by prefixing a &quot;title&quot; with a concatenation of hash marks '#'.</p>
+<h1 id="title-un">Title: Un</h1>
+<h2 id="title-deux">Title: Deux</h2>
+<h3 id="title-trois">Title: Trois</h3>
+<h4 id="title-quattre">Title: Quattre</h4>
+<h5 id="title-cinq">Title: Cinq</h5>
+<h6 id="title-six">Title: Six</h6>
+<pre><code># Title: Un
+## Title: Deux
+### Title: Trois
+#### Title: Quattre
+##### Title: Cinq
+###### Title: Six</code></pre>
+<p>Simple. When writing text following a structure (sections, sub-sections, etc.), the heading syntax becomes handy as it can be used to generate a Table Of Content (TOC) out of your markup file. We will see this more in details shortly.</p>
+<h4 id="block-quotes">(Block) Quotes</h4>
+<p>Blockquotes are also very simple.</p>
+<blockquote>
+<p>&quot;Mais la seule question quand on écrit, c'est de savoir avec quelle autre machine la machine littéraire peut être brancheé, et doit être branchée pour fonctionner.&quot;</p>
+</blockquote>
+<p>-- Deleuze &amp; Guattari, <em>Milles Plateaux</em></p>
+<pre><code>&gt; &quot;Mais la seule question quand on écrit, c&#39;est de savoir avec quelle autre machine la machine littéraire peut être brancheé, et doit être branchée pour fonctionner.&quot; 
+
+-- Deleuze &amp; Guattari, _Milles Plateaux_</code></pre>
+<h4 id="lists">Lists</h4>
+<p>There is a few valid syntax for lists.</p>
+<p>Below are two common ones:</p>
+<ol style="list-style-type: decimal">
+<li>List 1 item 1</li>
+<li>List 1 item 2</li>
+<li>List 1 item 3</li>
+<li>List 1 item 4</li>
+</ol>
+<pre><code>    1. List 1 item 1
+    2. List 1 item 2
+    3. List 1 item 3
+    4. List 1 item 4</code></pre>
+<!-- notice the above codeblock using special code ~~~~~ and this comment! -->
+
+<ul>
+<li>List 2 item 1</li>
+<li>List 2 item 2</li>
+<li>List 2 item 3</li>
+<li>List 2 item 4</li>
+</ul>
+<pre><code>- List 2 item 1
+- List 2 item 2
+- List 2 item 3
+- List 2 item 4</code></pre>
+<!-- notice the above codeblock using special code ~~~~~ and this comment! -->
+
+<p>Nested lists:</p>
+<ul>
+<li>List 3 item 1
+<ul>
+<li>List 3 item 1.1</li>
+<li>List 3 item 1.2</li>
+</ul></li>
+<li>List 3 item 2
+<ul>
+<li>List 3 item 2.1
+<ul>
+<li>List 3 item 2.1.1
+<ul>
+<li>List 3 item 2.1.1.1</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<pre><code>+ List 3 item 1
+    - List 3 item 1.1
+    - List 3 item 1.2
++ List 3 item 2
+    - List 3 item 2.1
+        - List 3 item 2.1.1
+            - List 3 item 2.1.1.1</code></pre>
+<!-- notice the above codeblock using special code ~~~~~ and this comment! -->
+
+<h4 id="links">Links</h4>
+<p>Now the interesting stuff. (Hyper)-Linking is one of the salient feature of digital documents. Hence markdown makes it very easy to write links to a URL.</p>
+<p>this is a <a href="http://gauthiier.github.io/wwwriting/Lesson2.html">link to Lesson2</a> with an absolute URL</p>
+<pre><code>this is a [link to Lesson2](http://gauthiier.github.io/wwwriting/Lesson2.html) with an absolute URL</code></pre>
+<p>this is the same <a href="Lesson2.html">link to Lesson2</a> but with an relative URL</p>
+<pre><code>this is the same [link to Lesson2](Lesson2.html) with an relative URL</code></pre>
+<p>See the distinction between absolute and relative URLs? You can always use an absolute URL to link any documents on the web using their full address. However, when your file linking other files that reside on the same address space (meaning that they are placed on the same server / filesystem), it is best to use relative URLs.</p>
+<h4 id="images">Images</h4>
+<p>Inserting images into the document is done in a similar fashion, linking the image using the same syntax as above.</p>
+<p>For example - absolute URL</p>
+<div class="figure">
+<img src="http://gauthiier.info/+++/jules-henri.png" alt="Jules Henri Poincaré" /><p class="caption">Jules Henri Poincaré</p>
+</div>
+<pre><code>![Jules Henri Poincaré](http://gauthiier.info/+++/jules-henri.png)</code></pre>
+<p>and - relative URL</p>
+<div class="figure">
+<img src="img/jules-henri.png" alt="Jules Henri Poincaré" /><p class="caption">Jules Henri Poincaré</p>
+</div>
+<pre><code>![Jules Henri Poincaré](img/jules-henri.png)</code></pre>
+<p>As you can see, the bang character '!' is the only add-on to link syntax while the caption of the image replaces the text on the link.</p>
+<h4 id="footnotes">Footnotes</h4>
+<p>When one has something to write that does not directly relate the core argument of a paragraph but nonetheless relates to its context, footnotes are a very practical way to branch of topic while keeping the reader not far from getting back into the main flow.</p>
+<p>The markdown syntax of a footnotes is as follow:</p>
+<p>I think you are eager to start writing markdown<a href="#fn2" class="footnoteRef" id="fnref2"><sup>2</sup></a>.</p>
+<pre><code>I think you are eager to start writing markdown[^2].  </code></pre>
+<p>And further down in the document</p>
+<pre><code>[^2]: And I hope you will do so very soon!</code></pre>
+<h4 id="delimiters">Delimiters</h4>
+<p>A delimiter line is represented by</p>
+<hr />
+<p>and denoted by</p>
+<pre><code>---</code></pre>
+<p>Such delimiters are useful when one wants to graphically separate parts of a text.</p>
+<hr />
+<p>We have now covered the most basic syntactic elements of the markdown language. In most cases these are enough to write great texts and even write entire books. All of the above syntax is suited for the content of texts, however you are yet to introduce how to layout and style the output of a markdown text file.</p>
+<p>The idea of behind markup languages is to create a clear division between <em>content</em> and <em>style</em>. Here we have covered the content side . Document conversion is covered in <a href="Lesson4.html">Lesson 4</a> while <a href="Lesson6.html">Lesson 6</a> introduces how styling can be applied to the output of such conversion.</p>
+<h3 id="extra">Extra</h3>
+<p><a href="http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html">Pandoc markdown primer</a></p>
+<p><a href="http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html">A thorough list of all markdown syntax</a></p>
+<p>A very handy functionality of <a href="http://www.sublimetext.com">Sublime Text</a> is its syntax highlighting for markdown. To enable such feature:</p>
+<p>Menu --&gt; Syntax --&gt; Markdown --&gt; Markdown</p>
+<div class="references">
+
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Not to mention that you can directly open and read this file &quot;Lesson3.md&quot; and see how it is written.<a href="#fnref1">↩</a></p></li>
+<li id="fn2"><p>And I hope you will do so very soon!<a href="#fnref2">↩</a></p></li>
+</ol>
+</div>
+</content>
+</body>
+</html>

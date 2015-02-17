@@ -36,7 +36,7 @@ The current site is segmented in six lessons covering the (very) basics of writi
 
 	Presents how one can manipulate files and issue computing commands using what is known as a terminal.
 
-* [Lesson 3: Markup / Markdown](/)
+* [Lesson 3: Markup / Markdown](Lesson3.html)
 
 	Introduces a markup language ([Markdown](http://daringfireball.net/projects/markdown/)) that is used to format and annotate text.
 

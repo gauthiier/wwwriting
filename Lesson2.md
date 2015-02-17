@@ -14,7 +14,7 @@ The aim of this lesson is for readers to develop an appreciation of the advantag
 The goals of the lesson are:
 
 1. Acquire basic knowledge on how to operate the CLI of your own computer. 
-2. Acquire just-enough basic CLI vocabulary to be used in future work.
+2. Acquire just-enough CLI vocabulary to be used in future work.
 
 ### How
 
