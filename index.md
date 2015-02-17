@@ -28,11 +28,11 @@ The idea in compiling this site-lesson is two fold:
 
 The current site is segmented in six lessons covering the (very) basics of writing academic texts on a computer.[^3] The overall composition of these lessons is by no mean derived from obscure "Principles" or (even worst) "Best-practices" but rather stand as loosely coupled set of lessons that can be traversed all together (or not) in a short period of time. The site is neither a manual nor a manifesto and should be seen as a starting point into further developing (creative) technics and methods in text writing. 
 
-* [Lesson 1: Text Encoding](/)
+* [Lesson 1: Text Encoding](Lesson1.html)
 
 	Covers fundamentals of representation of text looking up how text is encoded/decoded as data.
 
-* [Lesson 2: CLI or the Command Line Interface](/)
+* [Lesson 2: CLI or the Command Line Interface](Lesson2.html)
 
 	Presents how one can manipulate files and issue computing commands using what is known as a terminal.
 
@@ -46,7 +46,7 @@ The current site is segmented in six lessons covering the (very) basics of writi
 
 * [Lesson 5: Bibliographer](/)
 
-	Looks at how to compile and maintain a bibliography using open source software ([Zotero](https://www.zotero.org)) and export references into a document
+	Looks at how to compile and maintain a bibliography using open source software ([Zotero](https://www.zotero.org)) and export references into a document.
 
 * [Lesson 6: Styling](/)
 

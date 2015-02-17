@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+<content>
+<h2 id="cli-or-the-command-line-interface">CLI or the Command Line Interface</h2>
+<p>The Command Line Interface is the most common and pervasive interface directly linking fingers typing on a keyboard (text) and the computer (commands). The CLI is a legacy mode of operating computing system which can be traced back to early telegraphic devices. In this lesson we will look at your computer's own CLI and present ways in which you can use it to write, manipulate, analyse and transform text on your own computer system.</p>
+<div class="figure">
+<img src="img/rkwk101.gif" />
+</div>
+<h3 id="goals">Goals</h3>
+<p>The aim of this lesson is for readers to develop an appreciation of the advantages of using the CLI for certain types of work involving text editing on a computer. As the CLI itself is text based, our goal is to present the history of the CLI and discuss how text-based computer interfaces are still up to this day on of the most important ways to communicate with the computer systems.</p>
+<p>The goals of the lesson are:</p>
+<ol style="list-style-type: decimal">
+<li>Acquire basic knowledge on how to operate the CLI of your own computer.</li>
+<li>Acquire just-enough basic CLI vocabulary to be used in future work.</li>
+</ol>
+<h3 id="how">How</h3>
+<p>To access to the Command Line Interface of your computer you need a Command Line Interpreter. Every mdoern Operating System (OS) have such interpreter built-in. In fact, the Command Line Interpreter are legacy systems on most OS (OSX, Windows, Linux, Unix, etc.) because there was a time when interfacing with a computer was solely done typing commands on a terminal.<a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a> Most computer programmers, even nowadays, use the computer CLI on a daily basis to write and run software and even to debug hardware.</p>
+<p>Depending on which OS you are using, accessing its CLI is quite simple:</p>
+<ul>
+<li><p>On OSX, the &quot;Terminal&quot; application resides in the &quot;Utilities&quot; folder under &quot;Applications&quot;.</p></li>
+<li><p>On Windows, you access the CMD.EXE command prompt by typing &quot;cmd&quot; in the search bar of the &quot;Start&quot; menu</p></li>
+</ul>
+<p>On OSX your CLI should look like:</p>
+<div class="figure">
+<img src="img/cli0.png" />
+</div>
+<p>Bingo! Say hello to the computer's CLI!</p>
+<p>Now in order to utilise the CLI in a productive way you need to learn a couple of fundamental commands.</p>
+<ol style="list-style-type: decimal">
+<li><p>&quot;ls&quot; (OSX, Linux, Unix) and &quot;dir&quot; (Windows): lists all files and folders inside the directory your CLI's current working directory.</p></li>
+<li><p>&quot;cd&quot;: changes the CLI's current working directory</p></li>
+</ol>
+<p>Using both commands, you can basically navigate your whole filesystem. It is important at this point to understand the idea of a &quot;working directory&quot; as commands issued on the CLI usually depends in the files present in its &quot;working directory&quot;.</p>
+<p>We are now going to illustrate some useful commands (under OSX) that deal with text files and the likes. Hence, we will point our &quot;shell&quot; (another common name for the CLI) to the folder containing the files of this site.</p>
+<p>Issuing the &quot;ls&quot; command results in:</p>
+<pre><code>Gauthiier:wwwriting gauthiier$ ls
+Lesson1.html  Lesson2.md    Lesson5.md    index.html    wwwrite.bib
+Lesson1.md    Lesson3.md    Lesson6.md    index.md
+Lesson2.html  Lesson4.md    img/          style/</code></pre>
+<p>As you can see, directories are denoted with a leading &quot;/&quot; while files are not. Hence, &quot;img/&quot; is a directory and &quot;Lesson1.md&quot; is a file.</p>
+<p>It is possible to list the content of directories using &quot;ls&quot; without changing the &quot;working directory&quot;. For example, let's list the content of the directory &quot;style/&quot;:</p>
+<pre><code>Gauthiier:wwwriting gauthiier$ ls style/
+style.css       template.html5</code></pre>
+<p>Ok now let's play with file (meta)data.</p>
+<p>The command &quot;file&quot; can tell you what type a file is. For example:</p>
+<pre><code>Gauthiier:wwwriting gauthiier$ file wwwrite.bib 
+wwwrite.bib: UTF-8 Unicode English text, with very long lines</code></pre>
+<p>The command &quot;wc&quot; (word count) returns information about the content of the file:</p>
+<pre><code>Gauthiier:wwwriting gauthiier$ wc Lesson1.md
+ 118    1995   13100 Lesson1.md</code></pre>
+<p>where (1) the first column indicates the number of lines, (2) the second column the number of words and (3) the third column the number of bytes.</p>
+<p>The command &quot;grep&quot; matches words to files that contain them (search). &quot;grep&quot; can search a specific file or lookup files recursively in a directory.</p>
+<p>Let's look up the word: wwword.</p>
+<pre><code>Gauthiier:wwwriting gauthiier$ grep &quot;wwword&quot; Lesson2.md
+Let&#39;s look up the word: wwword.</code></pre>
+<p>&quot;grep&quot; gives the exact line-text where the word in found in the file.</p>
+<p>Similarly we can look up the number of times a word appears in each files ending with .md or .html in the current working directory:</p>
+<pre><code>Gauthiier:wwwriting gauthiier$ grep -rc --include=*.{md,html} &quot;wwword&quot; .
+./index.html:0
+./index.md:0
+./Lesson1.html:0
+./Lesson1.md:0
+./Lesson2.html:3
+./Lesson2.md:3
+./Lesson3.md:0
+./Lesson4.md:0
+./Lesson5.md:0
+./Lesson6.md:0</code></pre>
+<p>As you can see the command &quot;grep&quot; can be instructed, using certain command parameters, to perform quite advanced searches. In general all commands from the CLI have specific parameters that can be set to specify a specific ways in which to conduct their operations.</p>
+<p>It is, of course, out of the scope of this lesson to present all possible commands one can use to manipulate files and directories. For the remaining lessons, you only have to remember how to point your CLI to a specific working directory.</p>
+<h3 id="extra">Extra</h3>
+<p><a href="http://acad.coloradocollege.edu/dept/PC/sciCompLab/UnixTutorial/">OSX Unix Tutorial for Beginners</a></p>
+<p><a href="http://www.codejacked.com/a-beginners-guide-to-the-command-prompt">A beginners guide to the Command Prompt (Windows)</a></p>
+<p>A list of all commands: <a href="http://ss64.com/osx/">OSX</a> - <a href="http://ss64.com/nt/">Windows</a></p>
+<div class="references">
+
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Something that is easily forgotten in the era of ubiquitous computer Graphical User Interface (GUI). The CLI is to some degree reminescent of the Teletype (TTY).<a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+</content>
+</body>
+</html>
