@@ -36,7 +36,9 @@ A quick note here to emphasize the fact that computing was done on mainframes ba
 
 The first terminal to showcase a screen as output device (rather than paper) was the Datapoint 3300 by Computer Terminal Corporation (CTC).[^2] Other than having a glassy CTR screen, the main feature of the Datapoint 3300 was that it could seamlessly replace the Teletype Model 33 terminal and perform paperless the same operations. However, the Datapoint 3300 had obviously different circuitry than the Model 33. In order to drive its CTR monitor, CTC devised special electronic circuitry that kept track of the characters displayed on screen (shift-registers - a type of operational memory). The story goes that CTC, having a need to upgrade its circuitry, asked Intel and Texas Instrument (which are integrated circuit manufacturer) to produce a special ship that would be used to program its future screen-based terminals.[^3] This challenge lead to the development of one Intel's first 8-bit microprocessor - the Intel 8008.[^4]  
 
-The direct descendant of the Datapoint 3300, the Datapoint 2200 was the first programmable terminal, viewed by many as the first personal computer. The fact that the Datapoint 2200 was programmable, meaning that code could be written for and ran on the terminal's circuit itself and not on a mainframe made it very attractive to computer programmers. Commands could be issued on the Command Line Interface and directly resolved locally without the need of an (expensive) mainframe. This were the story of terminals ends. If code is executed locally and not remotly, it is erroneous to talk about a terminal but instead 
+The direct descendant of the Datapoint 3300, the Datapoint 2200 was the first programmable terminal, viewed by many as the first personal computer. The fact that the Datapoint 2200 was programmable, meaning that code could be written for and ran on the terminal's circuit itself and not on a mainframe made it very attractive to computer programmers. Commands could be issued on the Command Line Interface and directly resolved locally without the need of an (expensive) mainframe. 
+
+This is were the story of terminals ends. If code is executed locally and not remotely, it is erroneous to talk about a terminal but instead must 
 
 No more terminal but he emulation of the mainframe -- same look and feel 
 
@@ -50,7 +52,7 @@ Intel 8008 - Intel 8080
 1972 UNIX
 
 Microcomputers
-1974 CP/M ( "Control Program/Monitor")
+1974 CP/M 86 --- IBM PC -- INtel 8086( "Control Program/Monitor")
 DOS
 1978 Apple-DOS
 1979 Atari-DOS
@@ -65,9 +67,27 @@ Prompt
 
 Commands
 
+<ls>
+
+<mv>
+
+<cp>
+
+<file>
+
+<fmt> <fold>
+
+<iconv>
+
+<wc> + <nl>
+
+<grep>
+
 Results
 
 ### Extra
+
+<banner>
 
 [^1]: Something that is easily forgotten in the era of ubiquitous computer screens. For a discussion on the topic see Nick Montfort's essay [Continuous Paper: The Early Materiality and Workings of Electronic Literature](http://nickm.com/writing/essays/continuous_paper_mla.html).
 
