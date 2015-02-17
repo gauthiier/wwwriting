@@ -1,12 +1,11 @@
+
 ## CLI or the Command Line Interface
 
 The Command Line Interface is the most common and pervasive interface directly linking fingers typing on a keyboard (text) and the computer (commands). The CLI is a legacy mode of operating computing system which can be traced back to early telegraphic devices. In this lesson we will look at your computer's own CLI and present ways in which you can use it to write, manipulate, analyse and transform text on your own computer system.
 
-<br>
 
 ![](img/rkwk101.gif)
 
-<br>
 
 ### Goals
 
@@ -67,6 +66,7 @@ Prompt
 
 Commands
 
+<!--
 <ls>
 
 <mv>
@@ -88,6 +88,7 @@ Results
 ### Extra
 
 <banner>
+-->
 
 [^1]: Something that is easily forgotten in the era of ubiquitous computer screens. For a discussion on the topic see Nick Montfort's essay [Continuous Paper: The Early Materiality and Workings of Electronic Literature](http://nickm.com/writing/essays/continuous_paper_mla.html).
 
