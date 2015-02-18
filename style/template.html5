@@ -44,9 +44,9 @@ $if(title)$
 $if(subtitle)$
 <h1 class="subtitle">$subtitle$</h1>
 $endif$
-$if(cover)$
+$if(coverpage)$
 <figure>
-  <img src="$cover$"/>
+  <img src="$coverpage$"/>
 </figure>
 $endif$
 $for(author)$

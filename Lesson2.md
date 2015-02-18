@@ -1,5 +1,5 @@
 
-## CLI or the Command Line Interface
+# CLI or the Command Line Interface
 
 The Command Line Interface is the most common and pervasive interface directly linking fingers typing on a keyboard (text) and the computer (commands). The CLI is a legacy mode of operating computing system which can be traced back to early telegraphic devices. In this lesson we will look at your computer's own CLI and present ways in which you can use it to write, manipulate, analyse and transform text on your own computer system.
 
@@ -11,7 +11,7 @@ The Command Line Interface is the most common and pervasive interface directly l
 
 The aim of this lesson is for readers to develop an appreciation of the advantages of using the CLI for certain types of work involving text editing on a computer. As the CLI itself is text based, our goal is to present the history of the CLI and discuss how text-based computer interfaces are still up to this day on of the most important ways to communicate with the computer systems.
 
-The goals of the lesson are:
+The goals of this lesson are:
 
 1. Acquire basic knowledge on how to operate the CLI of your own computer. 
 2. Acquire just-enough CLI vocabulary to be used in future work.

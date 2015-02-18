@@ -1,4 +1,4 @@
-## Markup / Markdown
+# Markup / Markdown
 
 Markup languages are one of the most pervasive and common types of language on the Internet. In fact HTML is a type of markup language responsible to instruct our web browsers on how to layout text, images and the likes on our screens. Behind all web pages, there is a markup text file that is sent from a server to our browsers when we type in a URL. The beauty of markup languages is that they are both [human-readable](https://en.wikipedia.org/wiki/Human-readable_medium) and [machine-readable](https://en.wikipedia.org/wiki/Machine-readable_data) and written in plain text format. Reading a marked up text one can notice the special "meta-codes" and related syntax that direct machines in interpreting the same text. The idea is thus to have some standards and conventions describing these meta-codes and expected machine interpretation. 
 

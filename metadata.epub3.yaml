@@ -1,0 +1,18 @@
+
+---
+title:
+- type: main
+  text: WWWriting With Wit
+- type: subtitle
+  text: Lessons of modern text writing
+creator:
+- role: author
+  text: David Gauthier
+- role: editor
+  text: Erin La Cour
+identifier:
+- scheme: DOI
+  text: doi:10.234234.234/33
+publisher:  Amsterdammm University Press
+rights: © 2015 David Gauthier, CC BY-NC
+---

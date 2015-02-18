@@ -1,4 +1,4 @@
-## Bibliographer
+# Bibliographer
 
 ### Goals
 

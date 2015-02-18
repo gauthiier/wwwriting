@@ -3,7 +3,7 @@ bibliography: wwwrite.bib
 cover: img/enco.png
 ---
 
-## Text Encoding
+# Text Encoding
 
 We believe in approaching text writing by first understanding the core inscription mechanism upheld by modern computing machine. In this lesson we will hence look at how text and characters are inscribed and represented internally within computers. More specifically we will look at standards of text encoding (and decoding) and see how text editors can decode such encoding. 
 

@@ -1,7 +1,7 @@
 ---
 title: WWWRITING WITH WIT
 bibliography: wwwrite.bib
-cover: img/DSP6.png
+coverpage: img/DSP6.png
 ---
 
 ## Intent
@@ -40,7 +40,7 @@ The current site is segmented in six lessons covering the (very) basics of writi
 
 	Introduces a markup language ([Markdown](http://daringfireball.net/projects/markdown/)) that is used to format and annotate text.
 
-* [Lesson 4: (Text/Document) Processor](/)
+* [Lesson 4: (Text/Document) Processor](Lesson4.html)
 
 	Introduces a text / document processor ([Pandoc](http://johnmacfarlane.net/pandoc/)) which converts files written in a format into another.
 
