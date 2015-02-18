@@ -30,7 +30,7 @@ The current site is segmented in six lessons covering the (very) basics of writi
 
 * [Lesson 1: Text Encoding](Lesson1.html)
 
-	Covers fundamentals of representation of text looking up how text is encoded/decoded as data.
+	Covers fundamentals of representation of text looking up how text is encoded/decoded as data. We will be using [Sublime Text](http://www.sublimetext.com) as an editor.
 
 * [Lesson 2: CLI or the Command Line Interface](Lesson2.html)
 
