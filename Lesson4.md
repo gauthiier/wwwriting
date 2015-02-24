@@ -10,7 +10,7 @@ Assuming that you have a basic knowledge of the Markdown language, in this lesso
 The goals of this lesson are:
 
 1. Acquire the basic understanding of how to employ pandoc to produce both HTML and EPUB output. 
-2. Acquire the basic knoeledge of how pandoc can be tailored to produce other types of output.
+2. Acquire the basic knowledge of how pandoc can be tailored to produce other types of output.
 
 ### How
 
@@ -108,13 +108,13 @@ Also notice the
 
 	--epub-cover-image=img/DSP6.png
 
-which tells pandoc to use the specified image as cover for the EPUB.
+which tells pandoc to use the specified image as cover page for the EPUB.
 
 Finally the argument
 
 	--toc
 
-is a feature that instructs pandoc to generate a "Table Of Content" (toc) out of the various markdown Headings (symbol '#' [Lesson3](Lesson3.html)) present in the input files.
+is a feature that instructs pandoc to generate a "Table Of Content" (toc) out of the various markdown Headings (symbol '#' [Lesson3](Lesson3.html)) present in the input file(s).
 
 Let's now have a look at the EPUB output!
 

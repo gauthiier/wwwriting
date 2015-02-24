@@ -182,21 +182,19 @@ Such delimiters are useful when one wants to graphically separate parts of a tex
 ---
 
 
-We have now covered the most basic syntactic elements of the markdown language. In most cases these are enough to write great texts and even write entire books. All of the above syntax is suited for the content of texts, however you are yet to introduce how to layout and style the output of a markdown text file. 
-
-The idea of behind markup languages is to create a clear division between _content_ and _style_. Here we have covered the content side . Document conversion is covered in [Lesson 4](Lesson4.html) while [Lesson 6](Lesson6.html) introduces how styling can be applied to the output of such conversion.
+We have now covered the most basic syntactic elements of the markdown language. In most cases, these are enough to write great texts and even write entire books. All of the above syntax is suited for the content of texts, however, we are yet to introduce how to layout and style the output of a markdown input file. The idea of behind markup languages is to create a clear division between _content_ and _style_. Here we have covered the content side . Document conversion is covered in [Lesson 4](Lesson4.html) while [Lesson 6](Lesson6.html) introduces how styling can be applied to the output of such conversion.
 
 ### Extra
 
+[Online markdown editor](http://dillinger.io)
+
 [Pandoc markdown primer](http://johnmacfarlane.net/pandoc/demo/example9/pandocs-markdown.html)
 
-[A thorough list of all markdown syntax](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html)
+[A thorough list of all pandoc style markdown syntax](http://rmarkdown.rstudio.com/authoring_pandoc_markdown.html)
 
 A very handy functionality of [Sublime Text](http://www.sublimetext.com) is its syntax highlighting for markdown. To enable such feature:
 
 Menu --> Syntax --> Markdown --> Markdown
-
-
 
 
 

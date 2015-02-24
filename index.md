@@ -44,7 +44,7 @@ The current site is segmented in six lessons covering the (very) basics of writi
 
 	Introduces a text / document processor ([Pandoc](http://johnmacfarlane.net/pandoc/)) which converts files written in a format into another.
 
-* [Lesson 5: Bibliographer](/)
+* [Lesson 5: Bibliographer](Lesson5.html)
 
 	Looks at how to compile and maintain a bibliography using open source software ([Zotero](https://www.zotero.org)) and export references into a document.
 
