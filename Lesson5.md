@@ -4,14 +4,14 @@ Compiling and producing a bibliography is an central part in writing academic te
 
 ### Goals
 
-This lessons introduces how to use software to produce bibliographies for texts written in the markdown format and using pandoc as document converter. [Zotero](https://www.zotero.org) is the program which will be demonstrated, yet other programs having the functionality of producing [BibTeX](http://www.bibtex.org) formatted bibliographies (.bib) may also be used in conjunction with pandoc.[^1]
+This lessons introduces how to use software to produce bibliographies for texts written in markdown and using pandoc as document converter. [Zotero](https://www.zotero.org) is the program which will be demonstrated, yet other programs having the functionality of producing [BibTeX](http://www.bibtex.org) formatted files (.bib) may also be used in conjunction with pandoc.[^1]
 
 In short, the objectives of this lesson are:
 
 1. Acquire the basic understanding on how to use Zotero in gathering bibliographical information.
 2. Acquire the basic understanding on how to use Zotero to manage research references.
 3. Learn how to compile and export a BibTeX bibliography (and possibly other formats) using Zotero.
-4. Learn how to reference work within markdown and pandoc linked to information found in an exported BibTeX file (.bib).
+4. Learn how to reference work within markdown linked to information found in an exported BibTeX file (.bib) using pandoc.
 
 To install Zotero, please follow this [link](https://www.zotero.org/download/) and install the __Standalone version__ and related __browser extension__.
 
