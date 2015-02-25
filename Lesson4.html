@@ -19,8 +19,8 @@
 <p>Assuming that you have a basic knowledge of the Markdown language, in this lesson you will learn how to convert a text file written in markdown to both an HTML and EPUB3 output. In order to do so, you need to instal <a href="http://johnmacfarlane.net/pandoc/">Pandoc</a> on your system as we will be using this specific markdown converter.</p>
 <p>The goals of this lesson are:</p>
 <ol style="list-style-type: decimal">
-<li>Acquire the basic understanding of how to employ pandoc to produce both HTML and EPUB output.</li>
-<li>Acquire the basic knoeledge of how pandoc can be tailored to produce other types of output.</li>
+<li>Acquire basic understanding of how to employ pandoc to produce both HTML and EPUB output.</li>
+<li>Acquire basic knowledge of how pandoc can be tailored to produce other types of output.</li>
 </ol>
 <h3 id="how">How</h3>
 <p>In order to complete this lesson, you should be familiar with how to operated your computer's CLI (<a href="Lesson2.html">Lesson2</a>) and capable of writing markdown valid text (<a href="Lesson3.html">Lesson3</a>).</p>
@@ -76,10 +76,10 @@
 <p>these are exactly the same as in the previous HTML example. In fact, in one looks at the template and CSS you could notice that that are to some extent very similar to the HTML5 ones. This is because the EPUB markup language is based on HTML!</p>
 <p>Also notice the</p>
 <pre><code>--epub-cover-image=img/DSP6.png</code></pre>
-<p>which tells pandoc to use the specified image as cover for the EPUB.</p>
+<p>which tells pandoc to use the specified image as cover page for the EPUB.</p>
 <p>Finally the argument</p>
 <pre><code>--toc</code></pre>
-<p>is a feature that instructs pandoc to generate a &quot;Table Of Content&quot; (toc) out of the various markdown Headings (symbol '#' <a href="Lesson3.html">Lesson3</a>) present in the input files.</p>
+<p>is a feature that instructs pandoc to generate a &quot;Table Of Content&quot; (toc) out of the various markdown Headings (symbol '#' <a href="Lesson3.html">Lesson3</a>) present in the input file(s).</p>
 <p>Let's now have a look at the EPUB output!</p>
 <h3 id="extra">Extra</h3>
 <p><a href="http://johnmacfarlane.net/pandoc/try/">Try pandoc!</a></p>

@@ -8,8 +8,8 @@ This lessons introduces how to use software to produce bibliographies for texts 
 
 In short, the objectives of this lesson are:
 
-1. Acquire the basic understanding on how to use Zotero in gathering bibliographical information.
-2. Acquire the basic understanding on how to use Zotero to manage research references.
+1. Acquire basic understanding on how to use Zotero in gathering bibliographical information.
+2. Acquire basic understanding on how to use Zotero to manage research references.
 3. Learn how to compile and export a BibTeX bibliography (and possibly other formats) using Zotero.
 4. Learn how to reference work within markdown linked to information found in an exported BibTeX file (.bib) using pandoc.
 

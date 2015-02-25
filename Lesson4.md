@@ -9,8 +9,8 @@ Assuming that you have a basic knowledge of the Markdown language, in this lesso
 
 The goals of this lesson are:
 
-1. Acquire the basic understanding of how to employ pandoc to produce both HTML and EPUB output. 
-2. Acquire the basic knowledge of how pandoc can be tailored to produce other types of output.
+1. Acquire basic understanding of how to employ pandoc to produce both HTML and EPUB output. 
+2. Acquire basic knowledge of how pandoc can be tailored to produce other types of output.
 
 ### How
 
