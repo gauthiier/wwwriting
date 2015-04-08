@@ -111,3 +111,7 @@ A list of all commands: [OSX](http://ss64.com/osx/) - [Windows](http://ss64.com/
 
 
 [^1]: Something that is easily forgotten in the era of ubiquitous computer Graphical User Interface (GUI). The CLI is to some degree reminescent of the Teletype (TTY).
+
+<!-- Notes -->
+
+<!-- GUI / Xerox Star - http://members.dcn.org/dwnelson/XeroxStarRetrospective.html -->
